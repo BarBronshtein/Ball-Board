@@ -28,6 +28,7 @@ function startGame() {
   gGamerPos = { i: 2, j: 9 };
   gBoard = buildBoard();
   init();
+  closeModal();
   renderBoard(gBoard);
   passeges = [
     [0, gBoard[0].length / 2],
@@ -41,6 +42,7 @@ function init() {
   // initiallize variables
 
   closeModal();
+  gGame.score = 0;
   gGame.isStuck = false;
   gGame.victory = false;
   gGame.ballsToBeCollected = ballsOnBoard();

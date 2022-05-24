@@ -18,6 +18,10 @@ h1 {
   text-align: center;
 }
 
+.hidden {
+  display: none;
+}
+
 body {
   background-color: #222;
   color: white;
